@@ -16,7 +16,7 @@ namespace TestAutomation.Framework.Configuration.Interfaces
         IEnumerable<TestCategory> TestCategories { get; set; }
 
         /// <summary>
-        /// Gets or sets the portal configuration. This determines constraints which the tests should meet.
+        /// Gets or sets the configuration. This determines constraints which the tests should meet.
         /// </summary>
         IEnumerable<TestConfigurationItem> ApplicationContext { get; set; }
 

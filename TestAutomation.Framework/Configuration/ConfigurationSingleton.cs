@@ -7,7 +7,7 @@ using TestAutomation.Framework.Configuration.Interfaces;
 namespace TestAutomation.Framework.Configuration
 {
     /// <summary>
-    /// The test configuration repository - used by the feature tests to determine which tests should run and what portal
+    /// The test configuration repository - used by the feature tests to determine which tests should run.
     /// configuration is available currently.
     /// </summary>
     public static class ConfigurationSingleton

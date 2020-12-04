@@ -1,7 +1,7 @@
 namespace TestAutomation.Framework.Configuration
 {
     /// <summary>
-    /// The portal class configuration item class - used to determine a portal setting
+    /// The configuration class.
     /// </summary>
     // ReSharper disable once ClassNeverInstantiated.Global - Class gets serialized dynamically
     public class TestConfigurationItem
