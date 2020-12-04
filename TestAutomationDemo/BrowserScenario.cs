@@ -19,7 +19,6 @@ namespace TestAutomationDemo
         [BeforeScenario]
         public void BeforeScenario()
         {
-            Console.WriteLine(ConfigurationSingleton.Config);
             var sessionConfig = new SessionConfiguration()
             {
                 Port = Config.FrameworkOptions.Port,
