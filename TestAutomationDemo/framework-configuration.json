@@ -1,0 +1,36 @@
+{
+  "FrameworkOptions": {
+    "MaxAjaxCallWaitInSeconds": 30,
+    "MaxPageLoadWaitInSeconds": 60,
+    "MaxExplicitWaitInSeconds": 30,
+    "Browser": "chrome",
+    "Ssl": true,
+    "Port": 80,
+    "Headless": false
+  },
+  "TestCategories": [
+    {
+      "Category": "DotFiddle",
+      "ShouldRun": true
+    },
+    {
+      "Category": "Google",
+      "ShouldRun": false,
+      "Because": "We only want to run tests against DotFiddle at the moment."
+    }
+  ],
+  "ApplicationContext": [
+    {
+      "Tag": "MyNameIs",
+      "Value": "Dylan"
+    },
+    {
+      "Tag": "IAmLookingForJob",
+      "Value": ":)"
+    },
+    {
+      "Tag": "MaxUploadSizeInMb",
+      "Value": "5"
+    }
+  ]
+}

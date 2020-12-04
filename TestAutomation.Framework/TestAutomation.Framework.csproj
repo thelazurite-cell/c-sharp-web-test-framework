@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net471</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Coypu" Version="3.1.1" />
+      <PackageReference Include="Coypu.NUnit" Version="3.0.1" />
+      <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+      <PackageReference Include="JsonFx" Version="2.0.1209.2802" />
+      <PackageReference Include="NUnit" Version="3.12.0" />
+      <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="80.0.3987.10600" />
+      <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.5.14" />
+    </ItemGroup>
+
+</Project>

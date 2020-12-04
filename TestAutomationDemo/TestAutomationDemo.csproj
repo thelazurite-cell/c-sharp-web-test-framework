@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net471</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <Target Name="AfterUpdateFeatureFilesInProject">
+        <ItemGroup>
+            <Compile Include="**\*.feature.cs" Exclude="@(Compile)" />
+        </ItemGroup>
+    </Target>
+    <ItemGroup>
+        <PackageReference Include="Coypu" Version="3.1.1" />
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+        <PackageReference Include="JsonFx" Version="2.0.1209.2802" />
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="80.0.3987.10600" />
+        <PackageReference Include="SpecFlow" Version="3.5.14" />
+        <PackageReference Include="SpecFlow.NUnit" Version="3.5.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="framework-configuration.json" />
+      <Content Include="framework-configuration.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TestAutomation.Framework\TestAutomation.Framework.csproj" />
+    </ItemGroup>
+</Project>
